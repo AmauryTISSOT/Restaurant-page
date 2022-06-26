@@ -5,11 +5,11 @@ class MenuPage {
     }
 
     htmlInjection () {
-        const bodyE = document.querySelector('body');
+        const contentE = document.getElementById('content2');
 
         const menu_gridE = document.createElement('div');
         menu_gridE.className = 'menu-grid'
-        bodyE.append(menu_gridE);
+        contentE.appendChild(menu_gridE);
 
         const img_array = ['/src/recipes/food1.jpg','/src/recipes/food2.jpg',
                             '/src/recipes/food3.jpg','/src/recipes/food4.jpg'];

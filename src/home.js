@@ -7,7 +7,7 @@ class HomePage {
     }
 
     htmlInjection () {
-        const contentE = document.querySelector('body');
+        const contentE = document.getElementById('content');
         const headerE = document.createElement('div');
         contentE.appendChild(headerE);
 
@@ -44,6 +44,9 @@ class HomePage {
         titleE.className = 'title';
         ulE.className = 'menu';
         footerE.className = 'footer';
+
+        const content2 = document.createElement('div');
+        contentE.appendChild(content2).id = 'content2'
     }
 };
 

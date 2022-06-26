@@ -16,21 +16,22 @@
 
 }
 
-
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--font);
     background-image: url(../src/big-background.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
     background-color: #464646;
-    height: 100vh;
     width: 100vw;
-    /*overflow: hidden; */
+    height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font);
 }
 
 
@@ -43,14 +44,14 @@ body {
     background-color: var(--background-light);
     color: var(--font-color);
     width: 100%;
-    padding: 2rem;
+    padding-top: 2rem;
     padding-bottom: 0rem;
 }
 
 .footer {
     position: absolute;
-    bottom: 0px;
-    padding: 2px;
+    bottom: 2px;
+    margin-bottom: 2px;
     color: var(--font-color);
     background-color: var(--background-light);
     width: 100%;
@@ -79,6 +80,7 @@ a {
 
 .menu li:hover {
     border-bottom: 2px solid white;
+    margin-bottom: -2px;
 }
 
 .menu-grid {
@@ -122,4 +124,5 @@ img {
     margin: 100px;
     margin-bottom: 0px;
     color: var(--font-color);
+    text-align: center;
 }
