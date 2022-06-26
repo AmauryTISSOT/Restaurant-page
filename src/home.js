@@ -18,8 +18,11 @@ class HomePage {
         headerE.appendChild(ulE);
         
         const liE1 = document.createElement('li');
+        liE1.id = 'Home';
         const liE2 = document.createElement('li');
+        liE2.id = 'Menu';
         const liE3 = document.createElement('li');
+        liE3.id = 'Contact';
         ulE.appendChild(liE1).textContent = 'Home';
         ulE.appendChild(liE2).textContent = 'Menu';
         ulE.appendChild(liE3).textContent = 'Contact';
@@ -43,3 +46,5 @@ class HomePage {
         footerE.className = 'footer';
     }
 };
+
+export default HomePage;
